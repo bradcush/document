@@ -12,16 +12,25 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.hello"
+    "onCommand:extension.documentation"
   ],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "extension.hello",
-        "title": "Hello"
+        "command": "extension.documentation",
+        "title": "Documentation"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorHasSelection",
+          "command": "extension.documentation",
+          "group": "navigation"
+        }
+      ]
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
@@ -30,6 +39,7 @@
     "watch": "tsc -watch -p ./"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/node": "^12.12.0",
     "@types/vscode": "^1.34.0",
     "@typescript-eslint/eslint-plugin": "^4.16.0",
@@ -37,5 +47,8 @@
     "eslint": "^7.21.0",
     "prettier": "^2.6.1",
     "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "axios": "^0.26.1"
   }
 }
