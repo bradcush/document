@@ -30,6 +30,12 @@
           "group": "navigation"
         }
       ]
+    },
+    "keybindings": {
+      "when": "editorHasSelection",
+      "command": "extension.documentation",
+      "key": "shift+ctrl+i",
+      "mac": "shift+cmd+i"
     }
   },
   "scripts": {
