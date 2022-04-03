@@ -11,8 +11,15 @@ based on the current file type and seclected symbol in the focused document.
   - Start a task `npm: watch` to compile the code
   - Run the extension in a new VS Code window
 
-## Packing project
+## Packaging
 
-- Install vsce globally running `npm install -f vsce`
+- Install vsce globally running `npm install -g vsce`
 - Ensure current directory is the `document` project
 - Run `vsce package` to create `vsix` format
+
+## Testing
+
+End-to-end testing using an instance of VS Code
+
+- Run `npm test` to start the Mocha test suite
+- VS Code will be downloaded if needed automatically
