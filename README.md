@@ -2,7 +2,23 @@
 
 Visual Studio Code extension for viewing documentation directly inside VS Code
 using a webview. Documentation is supported for most programming languages
-based on the current file type and seclected symbol in the focused document.
+based on the current file type and selected symbol in the focused document.
+
+## Using document
+
+There two different ways to use document
+
+- Run the "Documentation" command on any file type without a selection to open
+  general language documentation in a webview based on the file type
+- Run the "Documentation" command on any file type with a selection to open
+  specific language documentation in a webview based on the file type and
+  selection (Built-in language symbols should be used for best results)
+
+### Running the "Documentation" command
+
+- Selecting "Document" from the Command Palette
+- Right-clicking a selection and choosing "Document" from the menu
+- Using the shortcut `Shift+Ctrl+I` or `Shift+Cmd+I` with or without selection
 
 ## Running the project
 
