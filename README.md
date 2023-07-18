@@ -1,8 +1,9 @@
 # Document
 
-Visual Studio Code extension for viewing documentation directly inside VS Code
-using a webview. Documentation is supported for most programming languages
-based on the current file type and selected symbol in the focused document.
+Visual Studio Code extension for viewing documentation from
+[cheat.sh](https://cht.sh) directly inside VS Code using a webview.
+Documentation is supported for most programming languages based on the current
+file type and selected symbol in the focused document.
 
 ## Using document
 
@@ -24,7 +25,7 @@ There two different ways to use document
 
 - Run `npm install` in terminal to install dependencies
 - Run the `Run Extension` target in the Debug View. This will:
-  - Start a task `npm: watch` to compile the code
+  - Start a task `npm:watch` to compile the code
   - Run the extension in a new VS Code window
 
 ## Packaging
